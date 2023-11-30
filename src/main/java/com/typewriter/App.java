@@ -4,17 +4,16 @@ import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
 import net.dv8tion.jda.api.requests.GatewayIntent;
 
-/**
- * Hello world!
- *
- */
+
 public class App 
 {
+    //Token is not included in this repo for security reasons
     public static void main( String[] args )
     {
         System.out.println( "Hello World!" );
-
-        JDABuilder jdaBuilder = JDABuilder.createDefault("MTA4NzYyODA3MDYzNjI0NTA1Mg.G2M_ZZ.2zzDG3mcbwl6smtZP-53oCMMP2eAJSMuoV6P2Y");
+        
+        //TOKEN GOES HERE
+        JDABuilder jdaBuilder = JDABuilder.createDefault("");
         jdaBuilder.enableIntents(GatewayIntent.MESSAGE_CONTENT);
         JDA jda = jdaBuilder.build();
 
